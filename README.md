@@ -1,4 +1,3 @@
-This repository releases a dataset for underwater imaging with planar refractive surfaces.
-The real dataset is captured by a Lytro Illum light field camera, which produces 225 sub-aperture images in a single shot.
-Due to the small microlens pitch inside the light field camera, we select 9 symmetric sub-aperture images with the largest relative spacing.
-The synthetic dataset is generated using the Taichi programming library, following the sub-aperture structure of the real dataset.
+This repository releases image datasets for underwater imaging through planar refractive surfaces.
+The real-world dataset is captured by a Lytro Illum light-field camera, which acquires 225 sub-aperture images in a single shot. Given the small pitch between internal microlenses, we select 9 symmetric sub-aperture images with the largest relative spacing for experiments.
+The synthetic dataset is generated using the Taichi programming library (official implementation: https://github.com/taichi-dev/taichi). Our scene construction is mainly based on the reference code: https://github.com/taichiCourse01/taichi_ray_tracing, which demonstrates the definition of a Cornell box and spheres. On this basis, we add support for cuboids, OBJ file import, and texture mapping to produce the synthetic dataset used in this work.
